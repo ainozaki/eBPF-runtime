@@ -1,14 +1,6 @@
 #ifndef EBPF_INST_H_
 #define EBPF_INST_H_
 
-struct ebpf_inst {
-  uint8_t opcode;
-  uint8_t dst : 4;
-  uint8_t src : 4;
-  int16_t offset;
-  int32_t imm;
-};
-
 /* Class */
 #define EBPF_CLASS_LD    0x00
 #define EBPF_CLASS_LDX   0x01

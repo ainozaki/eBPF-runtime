@@ -10,7 +10,7 @@ public:
   Interpreter() = default;
   ~Interpreter() = default;
 
-  int ebpf_run(void *ctx, const struct ebpf_inst &inst);
+  int ebpf_run(void *ctx, const struct ebpf_prog &prog);
 };
 
 #endif // INTERPRETER_H_

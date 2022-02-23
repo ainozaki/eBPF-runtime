@@ -1,5 +1,5 @@
 CC=clang++
-CPPFLAGS=-std=c++17 -I./include
+CPPFLAGS=-std=c++17 -Wall -I./include
 LFLAGS=
 LIBS=
 LIBS_TEST=-lgtest -lgtest_main
@@ -7,6 +7,7 @@ LIBS_TEST=-lgtest -lgtest_main
 SRC=\
 	interpreter.cc
 HEADER=\
+	include/ebpf.h \
 	include/ebpf_inst.h \
 	include/interpreter.h
 MAIN = ebpfr.cc
